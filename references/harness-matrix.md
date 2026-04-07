@@ -54,19 +54,30 @@
 | **License** | Proprietary | Proprietary | MIT (open source) | Proprietary | Proprietary | Proprietary |
 | **Unique Feature** | Full autonomy | Plan review before code | Browser-based sandbox | Full deployment | Design-first | Supabase integration |
 
+## Cloud & Async Agents (New Category)
+
+| Feature | Google Jules | Copilot Coding Agent | Warp Oz |
+|---------|-------------|---------------------|---------|
+| **Org** | Google Labs | GitHub / Microsoft | Warp |
+| **Mode** | Async cloud agent | Issue → PR (async) | Parallel cloud agents |
+| **Trigger** | GitHub Actions, issues, schedules | Assign issue to Copilot | Slack, GitHub, Linear, cron |
+| **Execution** | Cloud VM + Gemini 3 Pro | Cloud sandbox | Cloud VMs |
+| **Output** | Pull requests | Pull requests | PRs + notifications |
+| **Key Feature** | Environment Snapshots for fast setup | Native GitHub integration | Multi-repo, scheduling |
+| **Status** | GA (Aug 2025) | GA | Beta (Feb 2026) |
+
 ## Research Platforms
 
-| Feature | SWE-agent | OpenHands | AutoCodeRover | Agentless |
-|---------|-----------|-----------|---------------|-----------|
-| **Org** | Princeton NLP | All-Hands-AI | NUS | UIUC |
-| **Purpose** | Agent-Computer Interface research | Open platform for AI developers | AST-based code navigation | Minimal agent-free approach |
-| **Agent Loop** | Thought-Action-Observation | CodeAct | Search-navigate-edit | Localize → repair (no loop) |
-| **Tool System** | Custom ACI tools (windowed file view) | CodeAct (bash + python) | AST traversal tools | Standard LLM calls |
-| **Sandboxing** | Docker | Docker | None | None |
-| **Eval** | SWE-bench (pioneer) | SWE-bench (69.1%) | SWE-bench | SWE-bench |
-| **Key Insight** | Tool interface design > tool count | Open-source sandboxed platform | AST > file-level search | You may not need an agent loop |
-| **Language** | Python | Python | Python | Python |
-| **License** | MIT | MIT | GPL 3.0 | MIT |
+| Feature | SWE-agent | OpenHands | mini-SWE-agent | Open-SWE | OpenDev | Live-SWE-agent |
+|---------|-----------|-----------|----------------|----------|---------|----------------|
+| **Org** | Princeton NLP | All-Hands-AI | Princeton NLP | LangChain | Academic | OpenAutoCoder |
+| **Purpose** | ACI research | Open platform | Minimal agent | LangGraph harness | Compound AI harness | Self-evolving agent |
+| **Agent Loop** | Thought-Action-Obs | CodeAct | Bash-only (~100 lines) | LangGraph Deep Agents | Dual-agent (plan+exec) | Runtime self-evolution |
+| **Sandboxing** | Docker | Docker | Docker | None | None | Docker |
+| **SWE-bench** | Pioneer | 69.1% | 74%+ Verified | 66.5% Terminal-Bench | — | **79.2% Verified** (best open-source) |
+| **Key Insight** | Tool design > tool count | Sandboxed platform | Minimal harness wins | Harness changes > model changes | Rust performance + compound AI | Self-evolving beats static |
+| **Language** | Python | Python | Python | Python | Rust | Python |
+| **License** | MIT | MIT | MIT | MIT | MIT | MIT |
 
 ## Specialized & Emerging
 
@@ -80,8 +91,11 @@
 | **Sourcegraph Cody** | Sourcegraph | IDE | 5K+ | Code search + codebase context from code graph |
 | **Aide** | CodeStory | IDE (VS Code fork) | 5K+ | Proactive agent that suggests changes as you code |
 | **Void** | Void | IDE (VS Code fork) | 15K+ | Fully open-source, local-first, privacy-focused |
-| **Warp AI** | Warp | Terminal | — | AI integrated directly into the terminal emulator |
-| **OpenDev** | Research | Terminal | — | Academic harness from the "Building Effective AI Coding Agents" paper (2603.05344) |
+| **Warp 2.0 + Oz** | Warp | Terminal + Cloud | — | "Agentic Development Environment" — terminal agent + Oz cloud agent platform |
+| **Junie** | JetBrains | IDE + CLI | — | Native JetBrains integration. CLI launched March 2026. LLM-agnostic BYOK. |
+| **Google Antigravity** | Google | IDE | — | Agent-first IDE. 76.2% SWE-bench Verified. Free tier with Gemini Flash. |
+| **Plandex** | Independent | Terminal | — | Diff-sandbox model — changes isolated until approved. 30+ language repo maps. |
+| **Pi Agent** | Independent | Terminal | — | Minimal, hackable TypeScript harness. Hash-anchored edits. Ollama distribution. |
 
 ## Market Context (April 2026)
 
@@ -90,10 +104,15 @@
 | Agentic AI market size | $7-8B (2026) | Industry estimates |
 | Projected market (2030) | $40-93B | Industry projections |
 | Enterprise adoption | 25% deploying agent pilots | Gartner |
-| Cursor ARR | $2B+ | March 2026 |
-| Trae registered users | 6M+ | Alibaba |
+| Cursor ARR | $2B+ ($29.3B valuation) | March 2026 |
+| Trae registered users | 6M+ (1.6M MAU) | ByteDance |
+| Warp developers | 700K+ (3.2B lines edited in 2025) | Warp |
+| OpenHands raised | $18.8M | All-Hands-AI |
 | Fastest-growing GitHub repo | Claw Code (100K+ stars in days) | GitHub |
-| SWE-bench Verified SOTA | ~75%+ | SWE-bench leaderboard |
+| SWE-bench Verified SOTA | 79.2% (Live-SWE-agent + Claude Opus 4.5) | Open-source scaffold |
+| SWE-bench Pro top score | 51.8% (Augment Auggie) | Scale Labs |
+| MCP SDK downloads | 97M/month | AAIF |
+| AGENTS.md adoption | 60K+ open-source projects | AAIF |
 
 ---
 

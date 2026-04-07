@@ -5,8 +5,8 @@
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
-  <a href="#harnesses-covered"><img src="https://img.shields.io/badge/Harnesses-35%2B-blue.svg" alt="Harnesses: 35+"></a>
-  <a href="references/reading-list.md"><img src="https://img.shields.io/badge/Papers-25%2B-green.svg" alt="Papers: 25+"></a>
+  <a href="#harnesses-covered"><img src="https://img.shields.io/badge/Harnesses-45%2B-blue.svg" alt="Harnesses: 35+"></a>
+  <a href="references/reading-list.md"><img src="https://img.shields.io/badge/Papers-30%2B-green.svg" alt="Papers: 25+"></a>
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 The same LLM produces wildly different results depending on the harness wrapping it. A well-designed agentic harness turns a language model into a software engineer. A bad one turns it into an expensive autocomplete.
 
-This repo documents what makes the difference — distilled from studying 35+ production agent harnesses, 25+ research papers, and building harnesses from scratch.
+This repo documents what makes the difference — distilled from studying 45+ production agent harnesses, 30+ research papers, and building harnesses from scratch.
 
 ## Start Here
 
@@ -26,8 +26,8 @@ This repo documents what makes the difference — distilled from studying 35+ pr
 | Understand what a harness is | [Anatomy Overview](docs/01-anatomy-of-an-agent-harness.md) |
 | **Build your own harness** | [Build Your First Harness](docs/build-your-first-harness.md) |
 | Pick the right harness for your use case | [Which Harness?](references/use-case-guide.md) |
-| Compare harnesses side by side | [Harness Matrix](references/harness-matrix.md) (35+ harnesses) |
-| Read the best articles and papers | [Reading List](references/reading-list.md) (25+ papers, 15+ articles) |
+| Compare harnesses side by side | [Harness Matrix](references/harness-matrix.md) (45+ harnesses) |
+| Read the best articles and papers | [Reading List](references/reading-list.md) (30+ papers, 20+ articles) |
 | See how top harnesses solve hard problems | [Case Studies](case-studies/) (5 deep dives) |
 | Learn the terminology | [Glossary](docs/glossary.md) |
 | See how we got here | [Timeline](docs/timeline.md) (2022-2026) |
@@ -115,21 +115,24 @@ Deep dives into specific architectural decisions:
 - [How We Built Codex](https://openai.com/index/building-codex/) — OpenAI
 - [Introducing Gemini CLI](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-cli-open-source-ai-agent/) — Google
 
-Full list with 25+ papers, 15+ articles, 10 frameworks, repos, and community resources: **[Reading List](references/reading-list.md)**
+Full list with 30+ papers, 20+ articles, 10 frameworks, 4 protocols, repos, and community resources: **[Reading List](references/reading-list.md)**
 
 ## Harnesses Covered
 
-We track **35+ production harnesses** across seven categories:
+We track **45+ production harnesses** across eight categories:
 
 | Category | Harnesses |
 |----------|-----------|
-| **Terminal** | Claude Code, Aider, Codex CLI, Goose, Gemini CLI, OpenCode, Qwen Code |
-| **IDE** | Cursor, Windsurf, Trae, Kiro, Cline, Continue, Roo Code, PearAI, Zed AI |
-| **Autonomous** | Devin, Copilot Workspace, Bolt, Replit Agent, v0, Lovable |
-| **Research** | SWE-agent, OpenHands, AutoCodeRover, Agentless, OpenDev |
+| **Terminal** | Claude Code, Aider, Codex CLI, Goose, Gemini CLI, OpenCode, Qwen Code, Plandex |
+| **IDE** | Cursor, Windsurf, Trae, Kiro, Cline, Continue, Roo Code, Junie, Antigravity, PearAI, Zed AI |
+| **Cloud/Async** | Devin, Google Jules, Copilot Coding Agent, Warp Oz |
+| **App Generators** | Bolt, Replit Agent, v0, Lovable, Copilot Workspace |
+| **Research** | SWE-agent, OpenHands, mini-SWE-agent, Open-SWE, OpenDev, Live-SWE-agent |
 | **Derivative** | Claw Code (110K+ stars), Roo Code, PearAI |
 | **Enterprise** | Amp, Augment, Amazon Q, Tabnine, Cody |
-| **Specialized** | Aide, Void, Warp AI |
+| **Specialized** | Aide, Void, Warp 2.0, Pi Agent |
+
+**Protocols tracked:** [MCP](https://modelcontextprotocol.io/), [A2A](https://a2aprotocol.ai/), [ACP](https://zed.dev/ai), [AGENTS.md](https://agents.md/) — all governed by the [Agentic AI Foundation](https://www.linuxfoundation.org/) (AAIF)
 
 Full comparison: **[Harness Matrix](references/harness-matrix.md)** | Benchmarks: **[Task Suite](benchmarks/task-suite.md)**
 

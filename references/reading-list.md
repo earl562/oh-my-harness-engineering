@@ -65,6 +65,12 @@ Curated articles, papers, and resources for understanding agentic harnesses. Org
 | [Agentic Design Patterns: A System-Theoretic Framework](https://arxiv.org/abs/2601.19752) | — | 2026 | Deconstructs agentic systems into 5 functional subsystems, presents 12 design patterns across 4 categories: Foundational, Cognitive/Decisional, Execution/Interaction, and Adaptive/Learning. |
 | [Architecting Agentic Communities using Design Patterns](https://arxiv.org/abs/2601.03624) | — | 2026 | Three-tier pattern classification: LLM Agents → Agentic AI → Agentic Communities. Bridges enterprise distributed systems patterns with agent design. |
 | [Agentic AI: A Comprehensive Survey](https://arxiv.org/abs/2510.25445) | — | 2025 | Broad survey of agent architectures, applications, and future directions. Good overview for newcomers to the field. |
+| [FeatureBench: Agentic Coding for Complex Features](https://arxiv.org/abs/2602.10975) | — | 2026 | ICLR 2026. Shows Claude Opus 4.5 (74% SWE-bench) only solves 11% of FeatureBench — proves benchmark saturation is real. |
+| [SWE Context Bench: Context Learning in Coding](https://arxiv.org/abs/2602.08316) | — | 2026 | First benchmark for cross-task context accumulation and reuse. Tests what harness memory systems actually provide. |
+| [On the Impact of AGENTS.md Files](https://arxiv.org/abs/2601.20404) | — | 2026 | Measures how context files (AGENTS.md, CLAUDE.md) affect agent efficiency. Adopted by 60K+ open-source projects. |
+| [SWE-EVO: Long-Horizon Software Evolution](https://arxiv.org/abs/2512.18470) | — | 2025 | Benchmarks agents on maintaining/evolving legacy code — the 80% of real SE that SWE-bench ignores. |
+| [SWE-bench Pro: Long-Horizon Enterprise Tasks](https://arxiv.org/abs/2509.16941) | Scale Labs | 2025 | 1,865 harder problems from 41 repos. Augment's Auggie hit 51.8% (top score). The post-SWE-bench-Verified benchmark. |
+| [Context Engineering for AI Agents](https://arxiv.org/abs/2510.21413) | — | 2025 | How context delivery, tool design, and verification loops determine agent quality more than model choice. |
 
 ### Context & Memory
 | Paper | Authors | Year | Key Contribution |
@@ -93,6 +99,11 @@ Curated articles, papers, and resources for understanding agentic harnesses. Org
 | [The Rise of AI Harness Engineering](https://cobusgreyling.medium.com/the-rise-of-ai-harness-engineering-5f5220de393e) | Cobus Greyling | Analysis of harness engineering as a new discipline |
 | [The Anatomy of an Agent Harness](https://blog.dailydoseofds.com/p/the-anatomy-of-an-agent-harness) | Avi Chawla | Visual breakdown of harness components |
 | [Anthropic's Harness Engineering](https://medium.com/@richardhightower/anthropics-harness-engineering-two-agents-one-feature-list-zero-context-overflow-7c26eb02c807) | Rick Hightower | Two-agent "Ralph Loop" pattern for long-running tasks |
+| [Harness Engineering: Leveraging Codex in an Agent-First World](https://openai.com/index/harness-engineering/) | OpenAI | Formalizes "harness engineering" as a discipline — the blog post that named the field |
+| [Introducing Kiro](https://kiro.dev/) | AWS | Spec-driven development: specs → code, not prompts → code |
+| [Cursor 3](https://cursor.com/blog/cursor-3) | Anysphere | Complete rewrite around agent orchestration, 8 parallel background agents |
+| [Devin 2.0](https://cognition.ai/blog/devin-2) | Cognition | Interactive planning, Devin Search, Devin Wiki, compound AI architecture |
+| [OpenHands Index](https://openhands.dev/blog/openhands-index) | All-Hands-AI | First broad continual leaderboard for coding agents across 5 task types |
 
 ## Agent Frameworks
 
@@ -130,6 +141,14 @@ Curated articles, papers, and resources for understanding agentic harnesses. Org
 | Qwen Code | [QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) | Apache 2.0 |
 | Trae Agent | [bytedance/trae-agent](https://github.com/bytedance/trae-agent) | Apache 2.0 |
 | Claw Code | [ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) | MIT |
+| Plandex | [plandex-ai/plandex](https://github.com/plandex-ai/plandex) | Apache 2.0 |
+| OpenDev | [opendev-to/opendev](https://github.com/opendev-to/opendev) | MIT |
+| mini-SWE-agent | [SWE-agent/mini-swe-agent](https://github.com/SWE-agent/mini-swe-agent) | MIT |
+| Open-SWE | [langchain-ai/open-swe](https://github.com/langchain-ai/open-swe) | MIT |
+| Pi Agent | [badlogic/pi-mono](https://github.com/badlogic/pi-mono) | MIT |
+| Junie | [JetBrains/junie](https://github.com/JetBrains/junie) | Apache 2.0 |
+| Kiro | [kirodotdev/Kiro](https://github.com/kirodotdev/Kiro) | Apache 2.0 |
+| Live-SWE-agent | [OpenAutoCoder/live-swe-agent](https://github.com/OpenAutoCoder/live-swe-agent) | MIT |
 
 ## Benchmarks & Leaderboards
 
@@ -143,6 +162,22 @@ Curated articles, papers, and resources for understanding agentic harnesses. Org
 | [GAIA Benchmark](https://huggingface.co/spaces/gaia-benchmark/leaderboard) | General AI assistant tasks requiring multi-step reasoning |
 | [HumanEval+](https://github.com/evalplus/evalplus) | Code generation correctness with enhanced test suites |
 | [BigCodeBench](https://bigcode-bench.github.io/) | Practical coding tasks using real-world libraries and APIs |
+| [SWE-bench Pro](https://www.swebench.com/) | 1,865 harder enterprise-level problems from 41 repos — the post-SWE-bench-Verified benchmark |
+| [FeatureBench](https://arxiv.org/abs/2602.10975) | Complex feature development — exposes benchmark saturation (74% SWE-bench → 11% FeatureBench) |
+| [OpenHands Index](https://openhands.dev/blog/openhands-index) | Continual multi-task leaderboard: issue resolution, greenfield, frontend, testing, info gathering |
+| [SWE-EVO](https://arxiv.org/abs/2512.18470) | Long-horizon software evolution and maintenance |
+| [LiveCodeBench](https://livecodebench.github.io/) | Contamination-free benchmark using new competitive programming problems |
+
+## Protocols & Standards
+
+The agent protocol stack is solidifying under the [Agentic AI Foundation (AAIF)](https://www.linuxfoundation.org/), founded Dec 2025 by Anthropic, OpenAI, Google, Microsoft, AWS, and Block.
+
+| Protocol | Purpose | Governed By | Adoption |
+|----------|---------|-------------|----------|
+| [**MCP** (Model Context Protocol)](https://modelcontextprotocol.io/) | Standardizes how agents connect to tools and data sources | AAIF | 97M monthly SDK downloads, every major AI provider |
+| [**A2A** (Agent-to-Agent Protocol)](https://a2aprotocol.ai/) | Agent discovery and delegation between agents | AAIF | 50+ partner organizations, Google-led |
+| [**ACP** (Agent Client Protocol)](https://zed.dev/ai) | IDE-agnostic agent integration — bring any agent to any editor | Zed + JetBrains | Jan 2026, emerging |
+| [**AGENTS.md**](https://agents.md/) | Cross-agent context file standard (like CLAUDE.md but universal) | AAIF | 60K+ open-source projects |
 
 ## Community Resources
 
