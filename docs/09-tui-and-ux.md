@@ -24,7 +24,7 @@ Show what tools are being called and their results:
 ### Status Bar
 Persistent footer showing: current model, agent name, tool count, session state.
 ```
-POLY v0.1.0 │ agent-sdk/claude-sonnet-4-6 │ hermes │ 12 tools
+myharness v1.0 │ claude-sonnet-4-6 │ coder │ 12 tools
 ```
 
 ### Model Switching

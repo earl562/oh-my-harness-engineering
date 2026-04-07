@@ -1,5 +1,8 @@
 # Awesome Agentic Harness
 
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 **The model isn't the moat — the system is.**
 
 The same LLM produces wildly different results depending on the harness wrapping it. A well-designed agentic harness turns a language model into a software engineer. A bad one turns it into an expensive autocomplete.
@@ -44,6 +47,13 @@ Think of it like a race car: the engine (LLM) matters, but the chassis, suspensi
 | **Devin** | Cognition | Long-running autonomous agent |
 
 Full comparison: [Harness Matrix](references/harness-matrix.md) | Benchmarks: [Task Suite](benchmarks/task-suite.md)
+
+## Contributing
+
+Contributions welcome! If you've built or studied an agentic harness and have insights to share, open a PR. Especially interested in:
+- New harness case studies
+- Benchmark results across harnesses
+- Corrections or updates to existing docs
 
 ## License
 

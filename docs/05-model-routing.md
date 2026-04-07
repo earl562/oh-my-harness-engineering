@@ -72,7 +72,7 @@ sonnet  → haiku    → error
 
 Most harnesses (Claude Code, Aider, Cline) use a **single model** — the user picks one and everything goes through it. This is simple but wasteful.
 
-**Poly** implements per-turn routing with heuristic classification. No LLM call needed for classification — pure regex/keyword matching is fast and free.
+Custom harnesses can implement per-turn routing with heuristic classification. No LLM call needed for classification — pure regex/keyword matching is fast and free.
 
 **Cursor** uses a multi-model approach in its agent mode, routing between fast and powerful models, but the logic is opaque.
 
