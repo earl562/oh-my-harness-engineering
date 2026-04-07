@@ -66,25 +66,42 @@ How we got from ChatGPT wrappers to production agent systems in three years.
 
 **Late 2025** — **Amp, Augment, and specialized harnesses emerge.** The market segments: general-purpose coding agents (Claude Code, Cursor), autonomous agents (Devin), open-source research platforms (OpenHands, SWE-agent), and domain-specific agents.
 
-## 2026: The Current Landscape
+## 2026: Explosion
 
-**Early 2026** — The harness landscape has matured into distinct categories:
+**Jan 2026** — **"Agentic Design Patterns" paper** (arxiv 2601.19752). System-theoretic framework identifies 12 design patterns across 4 categories. Harness engineering becomes a recognized discipline with formal foundations.
+
+**Feb 2026** — **Trae surpasses 6 million users.** ByteDance's free IDE with Claude and DeepSeek access gains massive adoption. Builder Mode autonomous agent generates full projects from prompts.
+
+**Mar 2026** — **Three landmark harness papers in one month:**
+- "Building Effective AI Coding Agents for the Terminal" (2603.05344) — formalizes the harness as 7 subsystems, introduces OpenDev
+- "Natural-Language Agent Harnesses" (2603.25723) — proposes expressing harness behavior in editable natural language
+- "Meta-Harness" (2603.28052) — autonomous harness optimization, where the harness rewrites itself
+
+**Mar 2026** — **Cursor hits $2B+ ARR.** Fastest-growing developer tool in history proves the IDE agent model is commercially viable at scale.
+
+**Apr 2026** — **Claude Code source leak spawns Claw Code.** Clean-room Rust rewrite reaches 100K+ GitHub stars in days — fastest-growing repo in GitHub's history. Demonstrates massive demand for open-source harness implementations.
+
+**Apr 2026** — **OpenCode reaches 95K+ stars.** Go-based terminal agent with 75+ provider support and native LSP integration becomes the leading open-source alternative.
+
+**Current landscape** — the harness ecosystem has exploded:
 
 | Category | Examples | Defining Trait |
 |----------|----------|---------------|
-| **Terminal agents** | Claude Code, Aider, Codex CLI | Full autonomy in the terminal |
-| **IDE agents** | Cursor, Continue, Windsurf, Cline | Deep editor integration |
+| **Terminal agents** | Claude Code, Aider, Codex CLI, Gemini CLI, OpenCode, Qwen Code | Full autonomy in the terminal |
+| **IDE agents** | Cursor, Windsurf, Trae, Kiro, Cline, Continue, Roo Code | Deep editor integration |
 | **Autonomous agents** | Devin, Copilot Workspace | Background execution, async results |
-| **Research platforms** | SWE-agent, OpenHands | Reproducible evaluation, open research |
+| **Research platforms** | SWE-agent, OpenHands, OpenDev | Reproducible evaluation, open research |
 | **Plugin-native agents** | Goose | MCP-first, extensible by design |
 | **No-code agents** | Bolt, Replit Agent, v0, Lovable | Generate full apps from descriptions |
+| **Derivative/fork agents** | Claw Code, Roo Code, PearAI | Open-source rebuilds of proprietary tools |
 
-**Key trends emerging:**
+**Key trends:**
+- **Harness engineering as a discipline** — academic papers, formal pattern languages, and dedicated conferences
+- **Open-source parity** — OpenCode, Gemini CLI, and Qwen Code match proprietary tools in capability
+- **Free tier wars** — Google (Gemini CLI), Alibaba (Qwen Code), and ByteDance (Trae) offer free agent access
 - **SDK-native harnesses** — building on Agent SDK / Codex SDK rather than from scratch
-- **Eval-driven development** — benchmark suites run before every harness change
-- **Cost optimization** — prompt caching + model routing reduce costs 5-10x
-- **Background agents** — shift from interactive to async agent workflows
-- **MCP ecosystem** — standardized tool protocol enabling cross-harness plugins
+- **Natural-language harnesses** — expressing control flow in prose, not code (NLAH research)
+- **Agentic AI market reaches $7-8B** — projected to hit $40-93B by 2030
 
 ---
 

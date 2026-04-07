@@ -56,6 +56,16 @@ Curated articles, papers, and resources for understanding agentic harnesses. Org
 | [R2E: Turning any GitHub Repository into a Programming Agent Environment](https://arxiv.org/abs/2404.14545) | Jain et al. (MIT) | 2024 | Framework for generating benchmarks from any repo (not just Python), using repo-specific test suites. |
 | [Injectagent: Benchmarking Indirect Prompt Injections in Tool-Integrated LLM Agents](https://arxiv.org/abs/2403.02691) | Zhan et al. | 2024 | Systematic evaluation of prompt injection attacks against tool-using agents. Essential for harness security design. |
 
+### Harness Architecture (2026 — the field now has its own papers)
+| Paper | Authors | Year | Key Contribution |
+|-------|---------|------|-----------------|
+| [Building Effective AI Coding Agents for the Terminal](https://arxiv.org/abs/2603.05344) | Bui | 2026 | Introduces OpenDev and formalizes the harness as 7 subsystems around a ReAct core: pre-check, compaction, thinking, self-critique, action, tool execution, and post-processing. The first paper to treat the harness as a first-class research object. |
+| [Natural-Language Agent Harnesses](https://arxiv.org/abs/2603.25723) | Pan et al. (Tsinghua) | 2026 | Proposes NLAHs — expressing harness behavior in editable natural language instead of code, with Intelligent Harness Runtime (IHR) executing through explicit contracts. Shows harness structure now dominates agent performance. |
+| [Meta-Harness: End-to-End Optimization of Model Harnesses](https://arxiv.org/abs/2603.28052) | — | 2026 | An agentic outer-loop that autonomously searches for and rewrites harness infrastructure: retrieval logic, memory management, and prompt assembly. The harness optimizing itself. |
+| [Agentic Design Patterns: A System-Theoretic Framework](https://arxiv.org/abs/2601.19752) | — | 2026 | Deconstructs agentic systems into 5 functional subsystems, presents 12 design patterns across 4 categories: Foundational, Cognitive/Decisional, Execution/Interaction, and Adaptive/Learning. |
+| [Architecting Agentic Communities using Design Patterns](https://arxiv.org/abs/2601.03624) | — | 2026 | Three-tier pattern classification: LLM Agents → Agentic AI → Agentic Communities. Bridges enterprise distributed systems patterns with agent design. |
+| [Agentic AI: A Comprehensive Survey](https://arxiv.org/abs/2510.25445) | — | 2025 | Broad survey of agent architectures, applications, and future directions. Good overview for newcomers to the field. |
+
 ### Context & Memory
 | Paper | Authors | Year | Key Contribution |
 |-------|---------|------|-----------------|
@@ -78,6 +88,11 @@ Curated articles, papers, and resources for understanding agentic harnesses. Org
 | [Windsurf Cascade Architecture](https://codeium.com/blog) | Codeium | Multi-step planning agent in an IDE |
 | [Continue: Context Providers](https://docs.continue.dev/customization/context-providers) | Continue | Modular context injection via @-mentions |
 | [Amp: Agentic Coding Platform](https://amp.dev/blog) | Sourcegraph | Code intelligence integrated agent platform |
+| [Introducing Gemini CLI](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-cli-open-source-ai-agent/) | Google | Open-source terminal agent with Gemini, ReAct loop, MCP support |
+| [Qwen3-Coder: Agentic Coding in the World](https://qwenlm.github.io/blog/qwen3-coder/) | Alibaba/Qwen | Open-source 480B MoE coding model + CLI agent harness |
+| [The Rise of AI Harness Engineering](https://cobusgreyling.medium.com/the-rise-of-ai-harness-engineering-5f5220de393e) | Cobus Greyling | Analysis of harness engineering as a new discipline |
+| [The Anatomy of an Agent Harness](https://blog.dailydoseofds.com/p/the-anatomy-of-an-agent-harness) | Avi Chawla | Visual breakdown of harness components |
+| [Anthropic's Harness Engineering](https://medium.com/@richardhightower/anthropics-harness-engineering-two-agents-one-feature-list-zero-context-overflow-7c26eb02c807) | Rick Hightower | Two-agent "Ralph Loop" pattern for long-running tasks |
 
 ## Agent Frameworks
 
@@ -110,6 +125,11 @@ Curated articles, papers, and resources for understanding agentic harnesses. Org
 | Amp | [anthropics/claude-code](https://amp.dev) | Proprietary |
 | Bolt | [stackblitz/bolt.new](https://github.com/stackblitz/bolt.new) | MIT |
 | Mentat | [AbanteAI/mentat](https://github.com/AbanteAI/mentat) | Apache 2.0 |
+| OpenCode | [opencode-ai/opencode](https://github.com/opencode-ai/opencode) | MIT |
+| Gemini CLI | [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | Apache 2.0 |
+| Qwen Code | [QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) | Apache 2.0 |
+| Trae Agent | [bytedance/trae-agent](https://github.com/bytedance/trae-agent) | Apache 2.0 |
+| Claw Code | [ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) | MIT |
 
 ## Benchmarks & Leaderboards
 
@@ -134,6 +154,12 @@ Curated articles, papers, and resources for understanding agentic harnesses. Org
 | [SWE-agent Discord](https://discord.gg/swe-agent) | Community | Research community around agent-computer interfaces |
 | [Aider Discord](https://discord.gg/aider) | Community | Coding agent workflow discussion and troubleshooting |
 | [MCP Servers Registry](https://github.com/modelcontextprotocol/servers) | Registry | 200+ community MCP server implementations |
+| [awesome-cli-coding-agents](https://github.com/bradAGI/awesome-cli-coding-agents) | Awesome List | Curated directory of terminal-native AI coding agents |
+| [awesome-ai-agents-2026](https://github.com/caramaschiHG/awesome-ai-agents-2026) | Awesome List | 340+ AI agent resources across 20+ categories |
+| [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | Awesome List | Skills, hooks, plugins for Claude Code |
+| [Daily Dose of DS](https://blog.dailydoseofds.com/) | Newsletter | Regular coverage of agent architecture patterns |
+| [OpenCode Docs](https://opencode.ai/docs/) | Documentation | OpenCode architecture, providers, LSP integration |
+| [Kiro Dev](https://kiro.dev/) | Documentation | AWS's spec-driven agentic IDE |
 
 ---
 

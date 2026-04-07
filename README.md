@@ -5,8 +5,8 @@
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
-  <a href="#harnesses-covered"><img src="https://img.shields.io/badge/Harnesses-25%2B-blue.svg" alt="Harnesses: 25+"></a>
-  <a href="references/reading-list.md"><img src="https://img.shields.io/badge/Papers-20%2B-green.svg" alt="Papers: 20+"></a>
+  <a href="#harnesses-covered"><img src="https://img.shields.io/badge/Harnesses-35%2B-blue.svg" alt="Harnesses: 35+"></a>
+  <a href="references/reading-list.md"><img src="https://img.shields.io/badge/Papers-25%2B-green.svg" alt="Papers: 25+"></a>
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 The same LLM produces wildly different results depending on the harness wrapping it. A well-designed agentic harness turns a language model into a software engineer. A bad one turns it into an expensive autocomplete.
 
-This repo documents what makes the difference — distilled from studying 25+ production agent harnesses, 20+ research papers, and building harnesses from scratch.
+This repo documents what makes the difference — distilled from studying 35+ production agent harnesses, 25+ research papers, and building harnesses from scratch.
 
 ## Start Here
 
@@ -26,8 +26,8 @@ This repo documents what makes the difference — distilled from studying 25+ pr
 | Understand what a harness is | [Anatomy Overview](docs/01-anatomy-of-an-agent-harness.md) |
 | **Build your own harness** | [Build Your First Harness](docs/build-your-first-harness.md) |
 | Pick the right harness for your use case | [Which Harness?](references/use-case-guide.md) |
-| Compare harnesses side by side | [Harness Matrix](references/harness-matrix.md) (25+ harnesses) |
-| Read the best articles and papers | [Reading List](references/reading-list.md) (20+ papers, 10+ articles) |
+| Compare harnesses side by side | [Harness Matrix](references/harness-matrix.md) (35+ harnesses) |
+| Read the best articles and papers | [Reading List](references/reading-list.md) (25+ papers, 15+ articles) |
 | See how top harnesses solve hard problems | [Case Studies](case-studies/) (5 deep dives) |
 | Learn the terminology | [Glossary](docs/glossary.md) |
 | See how we got here | [Timeline](docs/timeline.md) (2022-2026) |
@@ -73,13 +73,14 @@ Different harnesses excel at different tasks — just like models. Here's the qu
 
 | Use Case | Best Fit | Why |
 |----------|----------|-----|
-| Solo dev, terminal | Claude Code, Aider | Best agent loops for interactive terminal use |
-| Solo dev, IDE | Cursor, Windsurf, Continue | Deep editor integration, codebase indexing |
+| Solo dev, terminal | Claude Code, Aider, Gemini CLI, OpenCode | Best agent loops for interactive terminal use |
+| Solo dev, IDE | Cursor, Windsurf, Trae, Kiro, Continue | Deep editor integration, codebase indexing |
 | Autonomous tasks | Devin, Copilot Workspace | Background execution, async PR delivery |
 | Untrusted code | OpenHands, Codex CLI | Docker / OS-level sandboxing |
 | Plugin extensibility | Goose | MCP-native, all capabilities as plugins |
 | Build your own | Agent SDK, SWE-agent | Libraries/frameworks for custom harnesses |
-| Local/private models | Aider, Continue, Goose | First-class Ollama/vLLM support |
+| Free terminal agent | Gemini CLI, Qwen Code | 1K+ free requests/day, no subscription |
+| Local/private models | Aider, Continue, Goose, OpenCode | First-class Ollama/vLLM support |
 | Generate full apps | Bolt, Replit Agent, v0, Lovable | Prompt-to-app in the browser |
 
 Full guide with decision flowchart and constraint filtering: **[Use Case Guide](references/use-case-guide.md)**
@@ -98,32 +99,37 @@ Deep dives into specific architectural decisions:
 
 ## Reading List Highlights
 
-**Papers:**
-- [ReAct: Synergizing Reasoning and Acting](https://arxiv.org/abs/2210.03629) — the loop behind every agent
+**2026 Papers (the field now has its own research):**
+- [Building Effective AI Coding Agents for the Terminal](https://arxiv.org/abs/2603.05344) — formalizes the harness as 7 subsystems
+- [Natural-Language Agent Harnesses](https://arxiv.org/abs/2603.25723) — expressing harness behavior in prose, not code
+- [Agentic Design Patterns](https://arxiv.org/abs/2601.19752) — 12 formal design patterns for agent systems
+
+**Foundational Papers:**
+- [ReAct](https://arxiv.org/abs/2210.03629) — the loop behind every agent
 - [SWE-agent: Agent-Computer Interfaces](https://arxiv.org/abs/2405.15793) — tool design > tool count
 - [SWE-bench](https://arxiv.org/abs/2310.06770) — the benchmark that started it all
-- [MemGPT: LLMs as Operating Systems](https://arxiv.org/abs/2310.08560) — OS-inspired memory management
-- [Lost in the Middle](https://arxiv.org/abs/2307.03172) — why context placement matters
 
 **Articles:**
 - [Components of a Coding Agent](https://magazine.sebastianraschka.com/p/components-of-a-coding-agent) — Sebastian Raschka
 - [Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents) — Anthropic
 - [How We Built Codex](https://openai.com/index/building-codex/) — OpenAI
-- [The Shift from Models to Systems](https://simonwillison.net/2024/Dec/19/the-shift-from-models-to-systems/) — Simon Willison
+- [Introducing Gemini CLI](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-cli-open-source-ai-agent/) — Google
 
-Full list with 20+ papers, 10+ articles, frameworks, repos, and community resources: **[Reading List](references/reading-list.md)**
+Full list with 25+ papers, 15+ articles, 10 frameworks, repos, and community resources: **[Reading List](references/reading-list.md)**
 
 ## Harnesses Covered
 
-We track **25+ production harnesses** across five categories:
+We track **35+ production harnesses** across seven categories:
 
 | Category | Harnesses |
 |----------|-----------|
-| **Terminal** | Claude Code, Aider, Codex CLI, Goose, Mentat |
-| **IDE** | Cursor, Cline, Continue, Windsurf, Roo Code, PearAI, Zed AI |
+| **Terminal** | Claude Code, Aider, Codex CLI, Goose, Gemini CLI, OpenCode, Qwen Code |
+| **IDE** | Cursor, Windsurf, Trae, Kiro, Cline, Continue, Roo Code, PearAI, Zed AI |
 | **Autonomous** | Devin, Copilot Workspace, Bolt, Replit Agent, v0, Lovable |
-| **Research** | SWE-agent, OpenHands, AutoCodeRover, Agentless |
-| **Emerging** | Amp, Augment, Amazon Q, Tabnine, Cody, Aide, Void, OpenCode |
+| **Research** | SWE-agent, OpenHands, AutoCodeRover, Agentless, OpenDev |
+| **Derivative** | Claw Code (110K+ stars), Roo Code, PearAI |
+| **Enterprise** | Amp, Augment, Amazon Q, Tabnine, Cody |
+| **Specialized** | Aide, Void, Warp AI |
 
 Full comparison: **[Harness Matrix](references/harness-matrix.md)** | Benchmarks: **[Task Suite](benchmarks/task-suite.md)**
 

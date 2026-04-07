@@ -91,6 +91,21 @@ A distilled representation of the current task state (files changed, decisions m
 ### Worktree
 A git feature that creates an independent working copy of a repository. Used by some harnesses to give sub-agents an isolated copy of the codebase where they can make changes without affecting the main working directory.
 
+### Builder Mode
+An autonomous agent mode (used by Trae) that scaffolds complete projects — frontend, backend, config files — from natural language descriptions. The agent plans the architecture and generates all files without step-by-step user approval.
+
+### Context Engineering
+The practice of designing what information goes into an LLM's context window and how it's structured. Encompasses prompt design, tool result formatting, history management, and retrieval strategies. Identified in 2026 research as the primary determinant of agent quality.
+
+### NLAH (Natural-Language Agent Harness)
+A harness where control behavior is expressed in editable natural language rather than code. Proposed in 2026 (arxiv 2603.25723) and executed by an Intelligent Harness Runtime (IHR) through explicit contracts.
+
+### Spec-Driven Development
+A methodology (used by Kiro) where the agent first generates detailed specifications, the user reviews the spec, and then the agent generates code from the approved spec. Separates planning from execution.
+
+### WebContainer
+StackBlitz's browser-based Node.js runtime used by Bolt.new. Runs entirely in the browser via WebAssembly, enabling sandboxed agent execution without a server.
+
 ---
 
 *Missing a term? Open a PR or issue.*
