@@ -6,9 +6,9 @@ Different harnesses excel at different tasks — just like models. Picking the r
 
 | Use Case | Best Fit | Why |
 |----------|----------|-----|
-| **Solo dev, IDE workflow** | Cursor, Continue | Deep IDE integration, codebase indexing, inline edits |
+| **Solo dev, IDE workflow** | Cursor, Windsurf, Continue | Deep IDE integration, codebase indexing, inline edits |
 | **Solo dev, terminal workflow** | Claude Code, Aider | Full agent loop in the terminal, git-aware |
-| **Autonomous task completion** | Claude Code, Devin | Multi-turn loops, subagents, long-running sessions |
+| **Autonomous task completion** | Devin, Copilot Workspace | Background execution, async PR delivery |
 | **Research / exploration** | Claude Code, Aider | Strong context management, repo-wide understanding |
 | **Open source contribution** | SWE-agent, OpenHands | Designed for issue-to-patch workflows |
 | **Untrusted code execution** | OpenHands, Codex CLI | Docker/OS-level sandboxing |
@@ -16,6 +16,9 @@ Different harnesses excel at different tasks — just like models. Picking the r
 | **Team / CI integration** | Devin, OpenHands | Web UI, async execution, PR workflows |
 | **Custom harness development** | Agent SDK, SWE-agent | Libraries/frameworks for building your own |
 | **Local/private models** | Aider, Continue, Goose | Strong local model support via Ollama/vLLM |
+| **Generate full apps from prompts** | Bolt, Replit Agent, v0, Lovable | Prompt-to-app in the browser |
+| **Enterprise / air-gapped** | Tabnine, Augment, Void | On-premise deployment, private models |
+| **Code intelligence + agent** | Amp, Cody (Sourcegraph) | Code graph powering agent context |
 
 ## Decision Flowchart
 
