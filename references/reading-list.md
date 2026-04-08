@@ -203,4 +203,4 @@ The agent protocol stack is solidifying under the [Agentic AI Foundation (AAIF)]
 
 ---
 
-*Know an article, paper, or resource that should be here? See [CONTRIBUTING.md](../CONTRIBUTING.md).*
+*Know an article, paper, or resource that should be here? Open a PR.*

@@ -116,4 +116,4 @@
 
 ---
 
-*Harness not listed? See [CONTRIBUTING.md](../CONTRIBUTING.md) to add it.*
+*Harness not listed? Open a PR.*
