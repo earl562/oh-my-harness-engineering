@@ -50,4 +50,4 @@ These harnesses have interesting architectural decisions worth documenting:
 - **LangGraph** — graph-based agent orchestration with explicit state machines
 - **Replit Agent** — full app generation and deployment from a single prompt
 
-See [CONTRIBUTING.md](../CONTRIBUTING.md) for submission guidelines.
+Open a PR with your case study.
