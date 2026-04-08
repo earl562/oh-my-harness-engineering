@@ -96,6 +96,7 @@ Deep dives into specific architectural decisions:
 | [OS-Native Sandboxing](case-studies/openai-codex-sandboxing.md) | Codex CLI | Kernel-level isolation vs Docker vs permissions |
 | [Repo Map](case-studies/aider-repo-map.md) | Aider | Tree-sitter codebase summaries for token efficiency |
 | [Codebase Indexing](case-studies/cursor-codebase-indexing.md) | Cursor | Embeddings + structural indexing for IDE agents |
+| [Full Architecture Deep Dive](case-studies/claude-code-architecture-deep-dive.md) | Claude Code | 5-phase loop, streaming tool executor, 4 compaction strategies, 7-stage permissions, 823-line retry |
 
 ## Reading List Highlights
 

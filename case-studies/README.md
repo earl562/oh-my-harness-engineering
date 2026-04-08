@@ -11,6 +11,7 @@ Deep dives into specific architectural decisions made by production harnesses. E
 | [OS-Native Sandboxing](openai-codex-sandboxing.md) | Codex CLI | Kernel-level isolation vs Docker vs permission systems — trade-offs and implementation |
 | [Repo Map](aider-repo-map.md) | Aider | Tree-sitter-generated codebase summaries for token-efficient context |
 | [Codebase Indexing](cursor-codebase-indexing.md) | Cursor | Embedding + structural indexing for zero-shot codebase understanding |
+| [Full Architecture Deep Dive](claude-code-architecture-deep-dive.md) | Claude Code | Complete teardown: 5-phase loop, streaming tool executor, 4 compaction strategies, 7-stage permissions, 823-line retry system |
 
 ## What Makes a Good Case Study
 
