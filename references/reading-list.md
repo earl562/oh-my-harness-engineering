@@ -85,30 +85,98 @@ Curated articles, papers, and resources for understanding agentic harnesses. Org
 
 ## Company Engineering Blogs
 
+### Anthropic
+| Post | Topic |
+|------|-------|
+| [Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents) | **Start here.** The definitive patterns guide: routing, parallelization, orchestrator-workers, evaluator-optimizer |
+| [Claude Code: Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices) | CLAUDE.md files, context management, multi-agent patterns |
+| [Why Agents Fail](https://www.anthropic.com/engineering/why-agents-fail) | Empirical failure mode analysis: context overflow, tool misuse, goal drift |
+| [Effective Harnesses for Long-Running Agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) | Initializer + coding agent pattern, context resets between sessions |
+| [Equipping Agents with Agent Skills](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) | Skills as composable expertise packages agents discover dynamically |
+| [Building Agents with the Claude Agent SDK](https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk) | SDK architecture — Claude Code's engine as a library |
+| [Quantifying Infrastructure Noise in Evals](https://www.anthropic.com/engineering/infrastructure-noise) | Infrastructure config swings benchmarks by several percentage points — sometimes more than the gap between top models |
+| [Introducing MCP](https://www.anthropic.com/news/model-context-protocol) | Model Context Protocol announcement and architecture |
+| [2026 Agentic Coding Trends Report](https://resources.anthropic.com/2026-agentic-coding-trends-report) | 8 trends reshaping software engineering: shifting roles, multi-agent coordination, human-AI collaboration |
+
+### OpenAI
+| Post | Topic |
+|------|-------|
+| [Harness Engineering: Leveraging Codex](https://openai.com/index/harness-engineering/) | **Named the discipline.** Context delivery, tool design, verification loops as the primary benchmark determinant |
+| [How We Built Codex](https://openai.com/index/building-codex/) | Codex CLI architecture: cloud sandboxes, microVM isolation, tool design |
+| [Unlocking the Codex Harness: How We Built the App Server](https://openai.com/index/unlocking-the-codex-harness/) | Infrastructure deep dive — the app server powering Codex agents |
+| [Unrolling the Codex Agent Loop](https://openai.com/index/unrolling-the-codex-agent-loop/) | Agent loop internals: streaming, tool execution, error recovery |
+| [Run Long-Horizon Tasks with Codex](https://developers.openai.com/blog/run-long-horizon-tasks-with-codex) | Patterns for multi-hour autonomous coding sessions |
+
+### Cursor / Anysphere
+| Post | Topic |
+|------|-------|
+| [Cursor 3](https://cursor.com/blog/cursor-3) | Complete rewrite around agent orchestration, 8 parallel background agents in cloud VMs |
+| [Best Practices for Coding with Agents](https://cursor.com/blog/agent-best-practices) | Planning before coding, parallel agents with git worktrees, model tuning per task |
+| [How Cursor Shipped its Coding Agent](https://blog.bytebytego.com/p/how-cursor-shipped-its-coding-agent) | ByteByteGo deep dive on Cursor's production agent architecture |
+| [Cursor Agent: How It Works](https://www.cursor.com/blog) | Codebase indexing, background agents, multi-model routing |
+
+### LangChain
+| Post | Topic |
+|------|-------|
+| [Improving Deep Agents with Harness Engineering](https://blog.langchain.com/improving-deep-agents-with-harness-engineering/) | **Top 30 → Top 5 on Terminal-Bench by changing only the harness** — self-verification and loop detection |
+| [Introducing Open SWE](https://blog.langchain.com/introducing-open-swe-an-open-source-asynchronous-coding-agent/) | Open-source async coding agent framework built on Deep Agents + LangGraph |
+| [How We Build Evals for Deep Agents](https://blog.langchain.com/how-we-build-evals-for-deep-agents/) | Eval-driven harness development — measuring what matters |
+
+### JetBrains
+| Post | Topic |
+|------|-------|
+| [The Agentic AI Era at JetBrains](https://blog.jetbrains.com/junie/2025/07/the-agentic-ai-era-at-jetbrains-is-here/) | Junie architecture: autonomous planning, MCP, structured task decomposition |
+| [Junie CLI: The LLM-Agnostic Coding Agent](https://blog.jetbrains.com/junie/2026/03/junie-cli-the-llm-agnostic-coding-agent-is-now-in-beta/) | Standalone CLI, IDE-agnostic, CI/CD capable, GitHub/GitLab integration |
+| [How Junie Uses TeamCity to Evaluate Coding Agents](https://blog.jetbrains.com/teamcity/2025/06/how-junie-uses-teamcity/) | CI-based eval infrastructure for agent quality measurement |
+
+### Google
+| Post | Topic |
+|------|-------|
+| [Introducing Gemini CLI](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-cli-open-source-ai-agent/) | Open-source terminal agent with Gemini, ReAct loop, 1K free req/day |
+| [Closing the Knowledge Gap with Agent Skills](https://developers.googleblog.com/closing-the-knowledge-gap-with-agent-skills/) | Skills architecture for Gemini CLI — 117-prompt eval harness |
+| [Plan Mode in Gemini CLI](https://developers.googleblog.com/plan-mode-now-available-in-gemini-cli/) | Plan-then-execute pattern for complex tasks |
+| [Real-World Agent Examples with Gemini 3](https://developers.googleblog.com/real-world-agent-examples-with-gemini-3/) | Production agent patterns: A2A, hierarchical agents, Vertex AI |
+
+### Warp
+| Post | Topic |
+|------|-------|
+| [Introducing Warp 2.0: The Agentic Development Environment](https://www.warp.dev/blog/reimagining-coding-agentic-development-environment) | "The default unit of work shifted from 'type code' to 'prompt, steer agents, ship'" |
+| [Introducing Oz: Orchestration Platform for Cloud Agents](https://www.warp.dev/blog/oz-orchestration-platform-cloud-agents) | Parallel cloud agents, cron scheduling, Slack/GitHub/Linear triggers |
+
+### Cognition (Devin)
+| Post | Topic |
+|------|-------|
+| [Devin: Our Approach](https://www.cognition.ai/blog) | Autonomous agents with DeepWiki and full cloud VM sandboxing |
+| [Devin 2.0](https://cognition.ai/blog/devin-2) | Interactive planning, Devin Search, Devin Wiki, compound AI (planner→coder→critic) |
+
+### Windsurf / Codeium
+| Post | Topic |
+|------|-------|
+| [Cascade Architecture](https://windsurf.com/cascade) | SWE-1.5 at 13x Claude speed, dual planner/executor, Arena Mode (models compete) |
+| [Windsurf Blog](https://codeium.com/blog) | Multi-step planning agent in an IDE |
+
+### Other Companies
 | Post | Company | Topic |
 |------|---------|-------|
-| [Claude Code: Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices) | Anthropic | CLAUDE.md files, context management, multi-agent patterns |
-| [Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents) | Anthropic | Agent patterns: routing, parallelization, orchestrator-workers |
-| [Why Agents Fail](https://www.anthropic.com/engineering/why-agents-fail) | Anthropic | Failure modes and mitigations |
-| [Introducing MCP](https://www.anthropic.com/news/model-context-protocol) | Anthropic | Model Context Protocol announcement and architecture |
-| [How We Built Codex](https://openai.com/index/building-codex/) | OpenAI | Codex CLI architecture, sandboxing, tool design |
-| [Aider: How It Works](https://aider.chat/docs/repomap.html) | Aider | Repo maps and tree-sitter codebase summaries |
-| [Devin: Our Approach](https://www.cognition.ai/blog) | Cognition | Autonomous agents with DeepWiki and cloud VMs |
-| [Goose: Extensible AI Developer Agent](https://block.github.io/goose/) | Block (Square) | MCP-first architecture, toolkit pattern |
-| [Cursor Agent: How It Works](https://www.cursor.com/blog) | Anysphere | Codebase indexing, background agents, multi-model routing |
-| [Windsurf Cascade Architecture](https://codeium.com/blog) | Codeium | Multi-step planning agent in an IDE |
+| [Aider: How Repo Maps Work](https://aider.chat/docs/repomap.html) | Aider | Repo maps and tree-sitter codebase summaries |
+| [Separating Code Reasoning and Editing](https://aider.chat/2024/09/26/architect.html) | Aider | Architect/Editor dual-model pattern — separate reasoning from file editing for SOTA results |
 | [Continue: Context Providers](https://docs.continue.dev/customization/context-providers) | Continue | Modular context injection via @-mentions |
-| [Amp: Agentic Coding Platform](https://amp.dev/blog) | Sourcegraph | Code intelligence integrated agent platform |
-| [Introducing Gemini CLI](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-cli-open-source-ai-agent/) | Google | Open-source terminal agent with Gemini, ReAct loop, MCP support |
+| [Amp: Agentic Coding Platform](https://amp.dev/blog) | Sourcegraph | Code intelligence (code graph) integrated into agent context |
+| [Goose: The Agent That Shaped MCP](https://www.arcade.dev/blog/goose-the-open-source-agent-that-shaped-mcp) | Block / AAIF | Goose as MCP reference implementation — new MCP features land here first |
+| [AAIF Announcement](https://block.xyz/inside/block-anthropic-and-openai-launch-the-agentic-ai-foundation) | Block | Goose donated to AAIF alongside MCP and AGENTS.md |
 | [Qwen3-Coder: Agentic Coding in the World](https://qwenlm.github.io/blog/qwen3-coder/) | Alibaba/Qwen | Open-source 480B MoE coding model + CLI agent harness |
-| [The Rise of AI Harness Engineering](https://cobusgreyling.medium.com/the-rise-of-ai-harness-engineering-5f5220de393e) | Cobus Greyling | Analysis of harness engineering as a new discipline |
+| [How Bolt.new Works](https://newsletter.posthog.com/p/from-0-to-40m-arr-inside-the-tech) | StackBlitz | $40M ARR, WebContainer architecture, Claude 3.5 Sonnet as enabling technology |
+| [2025: Replit in Review](https://blog.replit.com/2025-replit-in-review) | Replit | Agent-first platform: Agent v2→v3, 200-min autonomous sessions, 30+ connectors |
+| [Introducing Kiro](https://kiro.dev/) | AWS | Spec-driven development: specs → code, not prompts → code |
+| [OpenHands Index](https://openhands.dev/blog/openhands-index) | All-Hands-AI | First broad continual leaderboard for coding agents across 5 task types |
+
+### Independent Analysis
+| Post | Author | Topic |
+|------|--------|-------|
+| [The Rise of AI Harness Engineering](https://cobusgreyling.medium.com/the-rise-of-ai-harness-engineering-5f5220de393e) | Cobus Greyling | Harness engineering as a new discipline |
 | [The Anatomy of an Agent Harness](https://blog.dailydoseofds.com/p/the-anatomy-of-an-agent-harness) | Avi Chawla | Visual breakdown of harness components |
 | [Anthropic's Harness Engineering](https://medium.com/@richardhightower/anthropics-harness-engineering-two-agents-one-feature-list-zero-context-overflow-7c26eb02c807) | Rick Hightower | Two-agent "Ralph Loop" pattern for long-running tasks |
-| [Harness Engineering: Leveraging Codex in an Agent-First World](https://openai.com/index/harness-engineering/) | OpenAI | Formalizes "harness engineering" as a discipline — the blog post that named the field |
-| [Introducing Kiro](https://kiro.dev/) | AWS | Spec-driven development: specs → code, not prompts → code |
-| [Cursor 3](https://cursor.com/blog/cursor-3) | Anysphere | Complete rewrite around agent orchestration, 8 parallel background agents |
-| [Devin 2.0](https://cognition.ai/blog/devin-2) | Cognition | Interactive planning, Devin Search, Devin Wiki, compound AI architecture |
-| [OpenHands Index](https://openhands.dev/blog/openhands-index) | All-Hands-AI | First broad continual leaderboard for coding agents across 5 task types |
+| [LangChain Deep Agents: Harness and Context Engineering](https://medium.com/@richardhightower/langchain-deep-agents-harness-and-context-engineering-memory-skills-and-security-a68737d84940) | Rick Hightower | Memory, skills, and security in LangChain's agent harness |
 
 ## Agent Frameworks
 
@@ -200,6 +268,12 @@ The agent protocol stack is solidifying under the [Agentic AI Foundation (AAIF)]
 | [Daily Dose of DS](https://blog.dailydoseofds.com/) | Newsletter | Regular coverage of agent architecture patterns |
 | [OpenCode Docs](https://opencode.ai/docs/) | Documentation | OpenCode architecture, providers, LSP integration |
 | [Kiro Dev](https://kiro.dev/) | Documentation | AWS's spec-driven agentic IDE |
+| [Cursor Blog](https://cursor.com/blog) | Company Blog | Agent architecture, best practices, changelogs |
+| [Warp Blog](https://www.warp.dev/blog) | Company Blog | Agentic Development Environment, Oz platform |
+| [JetBrains Junie Blog](https://blog.jetbrains.com/junie/) | Company Blog | Junie agent architecture, CLI, eval |
+| [Replit Blog](https://blog.replit.com/) | Company Blog | Agent-first development platform |
+| [LangChain Blog](https://blog.langchain.com/) | Company Blog | Deep Agents, harness engineering, Open SWE |
+| [Anthropic Engineering](https://www.anthropic.com/engineering) | Company Blog | Harness design, agent SDK, evals, best practices |
 
 ---
 
