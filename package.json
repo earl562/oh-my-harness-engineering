@@ -1,0 +1,17 @@
+{
+  "name": "awesome-agentic-harness",
+  "private": true,
+  "type": "module",
+  "packageManager": "npm@11.3.0",
+  "workspaces": [
+    "packages/*",
+    "evals"
+  ],
+  "scripts": {
+    "lint": "node scripts/lint.js",
+    "typecheck": "node scripts/typecheck.js",
+    "analyze": "node scripts/analyze.js",
+    "check": "npm run lint && npm run typecheck && npm run analyze",
+    "test": "node --test"
+  }
+}

@@ -6,7 +6,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
   <a href="#harnesses-covered"><img src="https://img.shields.io/badge/harnesses-45%2B-818cf8.svg" alt="Harnesses: 45+"></a>
   <a href="references/reading-list.md"><img src="https://img.shields.io/badge/papers-30%2B-c084fc.svg" alt="Papers: 30+"></a>
-  <a href="case-studies/"><img src="https://img.shields.io/badge/case_studies-6-22d3ee.svg" alt="Case Studies: 6"></a>
+  <a href="case-studies/"><img src="https://img.shields.io/badge/case_studies-7-22d3ee.svg" alt="Case Studies: 7"></a>
   <a href="references/reading-list.md#protocols--standards"><img src="https://img.shields.io/badge/protocols-4-f472b6.svg" alt="Protocols: 4"></a>
 </p>
 
@@ -42,6 +42,7 @@ This is the definitive knowledge base for **harness engineering** — the discip
 4. [**Claude Code Architecture Deep Dive**](case-studies/claude-code-architecture-deep-dive.md) — 5-phase loop, streaming tool executor, 7-stage permissions
 5. [**Reading List**](references/reading-list.md) — 30+ papers, 20+ articles, 10 frameworks, 4 protocols
 6. [**Harness Matrix**](references/harness-matrix.md) — 45+ harnesses compared side by side
+7. [**Sandbox-First Harness Program**](docs/16-sandbox-first-harness-program.md) — Rebuild order, target architecture, and why the sandbox comes first
 
 </td></tr>
 </table>
@@ -64,6 +65,21 @@ Layer 4: Infrastructure      — multi-tenancy, RBAC, resource isolation, state 
 ```
 
 > *Princeton NLP proved it with SWE-agent: same model, better environment, 64% improvement. Terminal-Bench 2.0 confirmed it: LangChain improved 52.8% → 66.5% by changing only the harness — not the model.*
+
+<br>
+
+---
+
+<br>
+
+## `>` Implementation Workspace
+
+The repo now includes an implementation foundation alongside the research library:
+
+- **[Eval Lab](evals/README.md)** — canonical tasks, fixture repos, scoring rubric, and sandbox checklist
+- **[Packages](packages/README.md)** — shared contracts, `sandbox-core`, `codex-core`, and placeholders for later reconstruction waves
+
+This is the bridge from “study harnesses” to “rebuild harnesses under one roof.”
 
 <br>
 
@@ -107,6 +123,7 @@ Layer 4: Infrastructure      — multi-tenancy, RBAC, resource isolation, state 
 | 13 | **[Background Agents](docs/13-background-async-agents.md)** | Agents that run for hours without supervision |
 | 14 | **[Multi-Agent](docs/14-multi-agent-orchestration.md)** | DAGs, orchestrator-workers, and when to split agents |
 | 15 | **[Voice Agents](docs/15-voice-agent-harnesses.md)** | Sub-300ms latency loops for speech-first agents |
+| 16 | **[Sandbox-First Program](docs/16-sandbox-first-harness-program.md)** | Rebuild harness families in sequence and synthesize a sandbox-first architecture |
 
 <br>
 
@@ -143,6 +160,9 @@ Kernel-level isolation vs Docker vs permission systems
 
 **[Cursor Codebase Indexing](case-studies/cursor-codebase-indexing.md)**
 Embeddings + structural indexing for zero-shot understanding
+
+**[Browser Use Control Plane Sandboxing](case-studies/browser-use-control-plane-sandboxing.md)**
+Why high-autonomy web agents benefit from isolating the entire agent, not just the tool
 
 </td>
 </tr>

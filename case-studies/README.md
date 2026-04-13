@@ -9,6 +9,7 @@ Deep dives into specific architectural decisions made by production harnesses. E
 | [Sub-Agent Patterns](claude-code-sub-agent-patterns.md) | Claude Code | How bounded child agents with restricted tool access enable parallel, safe task delegation |
 | [ACI Design](swe-agent-aci-design.md) | SWE-agent | Why a simple agent with well-designed tool interfaces beats complex orchestration |
 | [OS-Native Sandboxing](openai-codex-sandboxing.md) | Codex CLI | Kernel-level isolation vs Docker vs permission systems — trade-offs and implementation |
+| [Control-Plane Sandboxing](browser-use-control-plane-sandboxing.md) | Browser Use | Why isolating the entire agent and brokering secrets through a control plane is a stronger pattern for web agents |
 | [Repo Map](aider-repo-map.md) | Aider | Tree-sitter-generated codebase summaries for token-efficient context |
 | [Codebase Indexing](cursor-codebase-indexing.md) | Cursor | Embedding + structural indexing for zero-shot codebase understanding |
 | [Full Architecture Deep Dive](claude-code-architecture-deep-dive.md) | Claude Code | Complete teardown: 5-phase loop, streaming tool executor, 4 compaction strategies, 7-stage permissions, 823-line retry system |
